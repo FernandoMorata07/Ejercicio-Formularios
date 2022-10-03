@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Formularios</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header><h1>FORMULARIOS</h1></header>
+    <main>
+      <form action="#" method="get">
+        <fieldset>
+          <legend>Datos Personales</legend>
+
+          <label for="name">Nombre:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Nombre y Apellidos"
+            required
+            minlength="5"
+            maxlength="30"
+            autocomplete="off"
+          />
+
+          <label for="email">Correo-electrónico</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="Escribe la URL de tu pagina web personal"
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>Horario para su cita</legend>
+
+          <label for="mechanic">Cita con su mecánico:</label>
+          <input type="date" id="mechanic" name="mechanic" />
+
+          <label for="time">Hora:</label>
+          <input type="time" id="time" name="time" />
+
+          <label for="timelocal">Cita:</label>
+          <input type="datetime-local" id="timelocal" name="timelocal" />
+
+          <label for="month">Mes:</label>
+          <input type="month" id="month" name="month" />
+
+          <label for="week">Semana;</label>
+          <input type="week" id="week" name="week" />
+
+          <label for="number">Numero:</label>
+          <input type="number" id="number" name="number" min="-10" max="10" />
+
+          <label for="tel">Teléfono:</label>
+          <input type="tel" name="tel" id="tel" value="685686565" readonly />
+        </fieldset>
+
+        <fieldset>
+          <legend>Otros inputs</legend>
+
+          <label for="search">Busqueda</label>
+          <input type="search" name="search" id="search" disabled />
+
+          <label for="color">Color Favorito</label>
+          <input type="color" id="color" name="color" />
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+  </body>
+</html>
